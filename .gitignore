@@ -1,2 +1,6 @@
 .metadata
 calculadora-cdb/target
+calculadora-cdb/bin
+calculadora-cdb/.project
+calculadora-cdb/.settings
+calculadora-cdb/.classpath
