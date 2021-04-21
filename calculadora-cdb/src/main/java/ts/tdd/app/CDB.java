@@ -2,7 +2,7 @@ package ts.tdd.app;
 
 public class CDB 
 {
-    private int tempoAplicacaoDias;
+    private float tempoAplicacaoDias;
     private float aplicacaoInicial;
     private float taxaJuros;
 
@@ -15,7 +15,7 @@ public class CDB
 
     public float calcularRendimentoBruto()
     {
-        return 13.97f;
+        return aplicacaoInicial * (tempoAplicacaoDias / 365) * (taxaJuros / 100);
     }
 
 }
