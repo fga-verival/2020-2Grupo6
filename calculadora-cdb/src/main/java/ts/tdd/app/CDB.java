@@ -20,6 +20,14 @@ public class CDB
 
     public float calcularImpostoRenda()
     {
-        return 3.14f;
+        if (this.tempoAplicacaoDias <= 180){
+            return calcularRendimentoBruto() * 0.225f;
+        } else if (this.tempoAplicacaoDias >= 181 && this.tempoAplicacaoDias <= 360){
+            return calcularImpostoRenda() * 0.2f;
+        } else if (this.tempoAplicacaoDias >= 361 && this.tempoAplicacaoDias <= 720){
+            return calcularImpostoRenda() * 0.175f;
+        } else {
+            return calcularImpostoRenda() * 0.15f;
+        }
     }
 }
