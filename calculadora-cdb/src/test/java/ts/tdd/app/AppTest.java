@@ -1,20 +1,16 @@
 package ts.tdd.app;
 
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-/**
- * Unit test for simple App.
- */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue()
+    public void TesteCalculoRendimentoBruto()
     {
-        assertTrue( true );
+        CDB aplicacao = new CDB(60, 1000.00f, 8.5f);
+        assertEquals(13.97f, aplicacao.calcularRendimentoBruto());
     }
 }
