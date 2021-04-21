@@ -18,4 +18,8 @@ public class CDB
         return aplicacaoInicial * (tempoAplicacaoDias / 365) * (taxaJuros / 100);
     }
 
+    public float calcularImpostoRenda()
+    {
+        return 3.14f;
+    }
 }
