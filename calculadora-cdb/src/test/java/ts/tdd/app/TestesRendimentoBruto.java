@@ -21,4 +21,13 @@ public class TestesRendimentoBruto
         assertEquals(13.15f, aplicacao.calcularRendimentoBruto(), 0.01f);
     }
 
+    @Test
+    public void TesteCalculoRendimentoBruto3()
+    {
+        CDB aplicacao1 = new CDB(240, 3000f, 9f);
+        CDB aplicacao2 = new CDB(270, 2000f, 8.5f);
+        assertEquals(177.53f, aplicacao1.calcularRendimentoBruto(), 0.01f);
+        assertEquals(125.75f, aplicacao2.calcularRendimentoBruto(), 0.01f);
+    }
+
 }
