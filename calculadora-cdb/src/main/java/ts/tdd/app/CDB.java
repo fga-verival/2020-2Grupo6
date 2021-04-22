@@ -33,7 +33,7 @@ public class CDB
 
     public float calcularRendimentoLiquido()
     {
-	    return 1.08f;
+        return (((this.aplicacaoInicial + calcularRendimentoBruto() - calcularImpostoRenda())/this.aplicacaoInicial)*100) - 100;
     }
- 
+    
 }
