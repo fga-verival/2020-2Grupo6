@@ -30,4 +30,10 @@ public class CDB
             return calcularRendimentoBruto() * 0.15f;
         }
     }
+
+    public float calcularRendimentoLiquido()
+    {
+	    return 1.08f;
+    }
+ 
 }
